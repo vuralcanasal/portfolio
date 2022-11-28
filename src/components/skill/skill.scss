@@ -1,0 +1,62 @@
+@import "../../global.scss";
+
+.skill{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .container{
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        .item{
+            overflow: hidden;
+            width: 15vw;
+            height: 5vw;
+            border-radius: 2vw;
+            margin: 1vw 2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: inherit;
+
+            img{
+                position: absolute;
+                background-color: inherit;
+                width: auto;
+                height: 90%;
+                z-index: 1;
+                transition: all 0.5s ease;
+            }
+
+            .rating{
+                opacity: 0;
+            }
+
+            #width{
+                position: absolute;
+                width: 90%;
+                height: auto;
+            }
+
+                        
+            &:hover{
+                
+                img{
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+
+                .rating{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
