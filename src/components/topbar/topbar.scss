@@ -9,6 +9,7 @@
     z-index: 3;
     color:$mainColor;
     transition: all 2s ease;
+    overflow: hidden;
 
     .wrapper{
         padding: 0.5vw 1vw;
